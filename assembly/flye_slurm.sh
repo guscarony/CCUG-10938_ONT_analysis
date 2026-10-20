@@ -4,8 +4,8 @@
 #SBATCH -p vera  
 #SBATCH -N 1 --cpus-per-task=12
 #SBATCH -t 02:30:00
-#SBATCH --output=/path/to/logs/flye.out
-#SBATCH --error=/path/to/logs/flye.err
+#SBATCH --output=logs/flye.out
+#SBATCH --error=/errors/flye.err
 
 # Set sample variables
 sample_ID=""
