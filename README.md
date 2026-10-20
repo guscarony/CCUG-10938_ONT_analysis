@@ -20,6 +20,11 @@ Database:
 Quality control, trimming and filtering
 
 1.3 MultiQC
+Prep work, create MultiQC dir structure:
+multiqc_analysis/______ multiqc.sh
+                    |__ <multiqc_output here?>
+                    |__ QC_results/______ kraken2_results/
+                                     |__ fastp_results/ 
 
 - 2 - Assembly
 
