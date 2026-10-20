@@ -4,8 +4,8 @@
 #SBATCH -p vera
 #SBATCH -N 1 --cpus-per-task=4
 #SBATCH -t 01:00:00
-#SBATCH --output=/path/to/logs/quast_%j.out
-#SBATCH --error=/path/to/logs/quast_%j.err
+#SBATCH --output=results/quast_%j.out
+#SBATCH --error=error/quast_%j.err
 
 # Load or use containerized QUAST
 CONTAINER_PATH="/cephyr/NOBACKUP/groups/n2bin_gu/BIO511-2026/containers/quast.sif"

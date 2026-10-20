@@ -6,8 +6,8 @@
 #SBATCH -p vera
 #SBATCH -N 1 --cpus-per-task=12 # Request 1 node with 12 CPUs
 #SBATCH -t 01:00:00
-#SBATCH --output=path/to/logs/kraken2_%j.out  # Standard output OBS: Change this to your actual log directory
-#SBATCH --error=path/to/logs/kraken2_%j.err   # Standard error OBS: Change this to your actual log directory
+#SBATCH --output=results/quast_%j.out
+#SBATCH --error=error/quast_%j.err
 
 #### OBS! Plug in variables for analysis work  
 input_path=""
