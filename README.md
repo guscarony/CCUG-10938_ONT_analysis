@@ -13,6 +13,8 @@ ___________________________________________________________________
 1.0 FASTQ splitter
 Split sample.fastq into sample_R1.fastq and sample_R2.fastq  
 https://usegalaxy.org/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffastq_paired_end_splitter%2Ffastq_paired_end_splitter%2F1.2%2Bgalaxy0&version=latest
+    IDK, I just don't wanna bother with another CLI setup w more dependencies and whatnot. We've got enough to do
+
 
 1.1 kraken2
 quick check for contamination
@@ -29,7 +31,7 @@ Quality control, trimming and filtering
 (step to filter unpaired/unmatched reads?)
 
 1.3 MultiQC
-input: kraken2_results (.), fastp_results(.)
+input: kraken2_results (.), fastp_results(.) (reports)
 Prep work, create MultiQC dir structure:
 multiqc_analysis/______ multiqc.sh
                     |__ <multiqc_output here?>
@@ -45,6 +47,7 @@ Assembly Quality assessment
 
 2.3 MultiQC
 also Assembly Quality assessment
+input: flye_results, quast_results (reports)
 
 2.4
 polishing
@@ -55,3 +58,6 @@ polishing
 
 3.1 Prokka
 input <assembly>.fa
+
+3.2 MultiQC
+input: prokka_results (report)

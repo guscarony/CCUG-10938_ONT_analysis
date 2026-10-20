@@ -8,6 +8,10 @@
 #SBATCH --error=/cephyr/users/youruser/Vera/practical_3/logs/prokka_curated_%j.err # error log, adjust path to where you want to save logs
 
 # Simple copy/paste of "Prokka with curated proteins" from genome workflow, practical 3
+# Escherichia coli K-12 MG1655 (GCF_000005845.2)
+# Escherichia coli O157:H7 str. Sakai (GCF_000008865.2)
+# Escherichia coli ATCC 25922 (GCF_000401755.1)
+# Escherichia coli O25b:H4-ST131 (GCF_024918415.1)
 
 
 # Set paths - ADJUST THESE TO YOUR ACTUAL PATHS
