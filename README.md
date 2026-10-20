@@ -43,4 +43,15 @@ de novo assembly
 2.2 QUAST
 Assembly Quality assessment
 
+2.3 MultiQC
+also Assembly Quality assessment
 
+2.4
+polishing
+
+
+
+- 3 - Annotation
+
+3.1 Prokka
+input <assembly>.fa
