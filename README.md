@@ -1,5 +1,7 @@
 # CCUG-10938_ONT_analysis
 
+UNDER CONSTRUCTION
+
 Some saved code for CLI analysis of ONT sequenced bacterial genome.
 README provides an overview of workflow, sections of each step with purpose, expected input and output, and when relevant, prep work and alternative resources.   
 
