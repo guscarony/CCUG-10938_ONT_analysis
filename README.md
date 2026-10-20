@@ -19,6 +19,8 @@ Database:
 1.2 fastp
 Quality control, trimming and filtering
 
+(step to filter unpaired/unmatched reads?)
+
 1.3 MultiQC
 Prep work, create MultiQC dir structure:
 multiqc_analysis/______ multiqc.sh
