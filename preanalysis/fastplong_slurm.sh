@@ -7,7 +7,8 @@
 #SBATCH --output=/output/fastplong_%j.out  # NB: this directory must already exist
 #SBATCH --error=/error/fastplong_%j.err   # NB: this directory must already exist
 
-#### Shamelessly and consentually stolen from Alfred 
+#### Shamelessly and consentually stolen template from Alfred 
+#   documentation to be found at https://github.com/OpenGene/fastpLong#simple-usage
 
 set -euo pipefail
 
@@ -24,16 +25,14 @@ CONTAINER_PATH="/cephyr/NOBACKUP/groups/n2bin_gu/students/_BIO511_containers/fas
 
 # ---------- Sample and fastplong settings ----------
 
-
-
-
 INPUT_NAME="${sample_ID}"
 
-MIN_LEN=1000     # -l  minimum read length (bp)
-MEAN_Q=10        # -m  minimum mean read quality
-QUAL=15          # -q  per-base qualified quality threshold
-TRIM_FRONT=0     # -f  bases trimmed from read start
-# fastplong thread count follows the CPUs requested above
+# First check w low thresholds, just to get a feel for the data. Sharpen on secound run
+MIN_LEN=500     # -l  minimum read length (bp)                  # 500 ->
+MEAN_Q=10        # -m  minimum mean read quality                # 10 ->
+QUAL=15          # -q  per-base qualified quality threshold     # 15 ->
+TRIM_FRONT=5     # -f  bases trimmed from read start            # 5 (bc ONT is insecure before it's rolling)
+# fastplong thread count follows the CPUs requested above       
 THREADS="${SLURM_CPUS_PER_TASK}"
 
 # ---------- Run ----------
@@ -63,3 +62,4 @@ srun apptainer exec \
         -j "/results/${sample_ID}_fastplong.json"
 
 echo "Completed fastplong for ${sample_ID}"
+open ${sample_ID}_fastp_report.html

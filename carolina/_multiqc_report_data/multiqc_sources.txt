@@ -1,0 +1,2 @@
+Module	Section	Sample Name	Source
+Kraken	all_sections	reports | galaxy_kraken2_CCUG-10938.tabular	/home/DNebula/BIO511_git/CCUG-10938_ONT_analysis/carolina/reports/galaxy_kraken2_CCUG-10938.tabular

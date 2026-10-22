@@ -1,0 +1,2 @@
+Sample	Kraken_mqc-generalstats-kraken-pct_top_one	Kraken_mqc-generalstats-kraken-pct_top_n	Kraken_mqc-generalstats-kraken-pct_unclassified
+reports | galaxy_kraken2_CCUG-10938.tabular	73.28569782182782	77.22715224155814	1.486688947793016
