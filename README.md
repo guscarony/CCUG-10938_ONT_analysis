@@ -1,4 +1,6 @@
 # CCUG-10938_ONT_analysis
+containers at /cephyr/NOBACKUP/groups/n2bin_gu/students/_BIO511_containers
+kraken2 db at /cephyr/NOBACKUP/groups/n2bin_gu/BIO511-2026/databases/kraken2_db
 
 UNDER CONSTRUCTION
 
@@ -16,14 +18,10 @@ https://usegalaxy.org/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffastq_
     IDK, I just don't wanna bother with another CLI setup w more dependencies and whatnot. We've got enough to do
 
 
-1.1 kraken2
+1.1 kraken2 (Version 2.17.1) 
 quick check for contamination
-communal kraken2-db temporarily gone (New upload to Vera on its way).
-For now, use; 
-https://usegalaxy.org/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fkraken2%2Fkraken2%2F2.17.1%2Bgalaxy0&version=latest
-kraken2 (Version 2.17.1) 
+New dabase uploaded to vera, I(C) still can't get it to work so I use: https://usegalaxy.org/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fkraken2%2Fkraken2%2F2.17.1%2Bgalaxy0&version=latest
 Database:
-
 
 1.2 fastplong (fastp but for long reads)  
 Quality control, trimming and filtering
@@ -39,10 +37,10 @@ multiqc_analysis/______ multiqc.sh
                                      |__ fastp_results/ 
 
 - 2 - Assembly
-2.1 Flye
+2.1 Flye (Flye version 2.9.5-b1801)
 de novo assembly
 
-2.2 QUAST
+2.2 Quast ()
 Assembly Quality assessment
 
 2.3 MultiQC
